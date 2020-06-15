@@ -25,7 +25,7 @@ window.Config = {
   Navi: [
     {
       text: '主页',
-      url: 'https://status.ixmu.net/'
+      url: 'https://status.wanvi.net/'
     },
     {
       text: '博客',
