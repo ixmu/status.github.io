@@ -2,7 +2,7 @@
 window.Config = {
 
   // 站点名
-  SiteName: 'Uptime Status',
+  SiteName: '基础服务可用性监测',
 
   // 站点链接
   SiteUrl: '/',
@@ -14,7 +14,7 @@ window.Config = {
   ],
 
   // 是否显示监测站点的链接
-  ShowLink: true,
+  ShowLink: flase,
 
   // 日志天数
   // 虽然免费版说仅保存60天日志，但测试好像API可以获取90天的
