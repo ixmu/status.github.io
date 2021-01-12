@@ -25,11 +25,11 @@ window.Config = {
   Navi: [
     {
       text: '主页',
-      url: 'https://status.wanvi.net/'
+      url: 'https://status.ixmu.net/'
     },
     {
-      text: '博客',
-      url: 'https://www.wanvi.net/'
+      text: '黑软技术栈',
+      url: 'https://www.ixmu.net/'
     }
   ]
 };
