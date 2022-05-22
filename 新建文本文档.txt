@@ -1,0 +1,92 @@
+config smartdns
+        option server_name 'smartdns'
+        option port '6053'
+        option tcp_server '1'
+        option ipv6_server '1'
+        option cache_size '102400'
+        option rr_ttl_min '300'
+        option rr_ttl_max '36000'
+        option seconddns_enabled '1'
+        option seconddns_port '6553'
+        option seconddns_tcp_server '1'
+        option seconddns_no_rule_addr '0'
+        option seconddns_no_rule_nameserver '0'
+        option seconddns_no_rule_ipset '0'
+        option seconddns_no_cache '0'
+        option coredump '0'
+        option force_aaaa_soa '1'
+        option enabled '1'
+        option prefetch_domain '1'
+        option seconddns_no_rule_soa '1'
+        option seconddns_no_dualstack_selection '1'
+        option serve_expired '1'
+        option seconddns_server_group 'office'
+        option seconddns_no_speed_check '1'
+        option dualstack_ip_selection '1'
+        option redirect 'dnsmasq-upstream'
+        list old_redirect 'dnsmasq-upstream'
+        list old_port '6053'
+        list old_enabled '1'
+
+config server
+        option enabled '1'
+        option type 'udp'
+        option name 'cmcc1'
+        option ip '211.139.5.29'
+
+config server
+        option enabled '1'
+        option type 'udp'
+        option name 'cmcc2'
+        option ip '211.139.5.30'
+
+config server
+        option enabled '1'
+        option name 'alidoh'
+        option ip 'https://27392.alidns.com/dns-query'
+        option type 'https'
+
+config server
+        option enabled '1'
+        option type 'udp'
+        option name 'google'
+        option ip '8.8.8.8'
+        option server_group 'office'
+        option blacklist_ip '1'
+        option addition_arg '-exclude-default-group'
+
+config server
+        option enabled '1'
+        option type 'udp'
+        option name 'cloudflare'
+        option ip '1.1.1.1'
+        option server_group 'office'
+        option blacklist_ip '1'
+        option addition_arg '-exclude-default-group'
+
+config server
+        option enabled '1'
+        option type 'udp'
+        option name 'opendns'
+        option ip '208.67.222.222'
+        option server_group 'office'
+        option blacklist_ip '1'
+        option addition_arg '-exclude-default-group'
+----------------------------------------------
+第二个配置文件
+
+custom.conf
+
+speed-check-mode ping,tcp:80
+
+
+conf-file /opt/custom/cm_list.conf
+
+文件内容格式：
+nameserver /.RuTracker.org/office
+ipset /.RuTracker.org/gfwlist
+
+conf-file /opt/custom/gfw_list.conf
+文件内容格式：
+nameserver /.1688.com.au/office
+ipset /.1688.com.au/gfwlist
