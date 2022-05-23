@@ -1,0 +1,32 @@
+2022-05-23T14:01:35.248Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "v10.events.data.microsoft.com. IN A 2494 18 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:35.248Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "v10.events.data.microsoft.com. IN A 2494 18 127.0.0.1", "status": "responded"}
+2022-05-23T14:01:35.253Z        debug   forward_remote  bundled_upstream/bundled_upstream.go:96 response accepted       {"query": "v10.events.data.microsoft.com. IN A 52828 19 127.0.0.1", "from": "https://cloudflare-dns.com/dns-query"}
+2022-05-23T14:01:35.253Z        debug   _return handler/plugin_wrapper.go:80    executing plugin        {"query": "v10.events.data.microsoft.com. IN A 52828 19 127.0.0.1", "tag": "_return"}
+2022-05-23T14:01:35.254Z        debug   forward_remote  bundled_upstream/bundled_upstream.go:96 response accepted       {"query": "v10.events.data.microsoft.com. IN AAAA 52828 19 127.0.0.1", "from": "https://cloudflare-dns.com/dns-query"}
+2022-05-23T14:01:35.254Z        debug   _return handler/plugin_wrapper.go:80    executing plugin        {"query": "v10.events.data.microsoft.com. IN AAAA 52828 19 127.0.0.1", "tag": "_return"}
+2022-05-23T14:01:35.254Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "v10.events.data.microsoft.com. IN AAAA 52828 19 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:35.254Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "v10.events.data.microsoft.com. IN AAAA 52828 19 127.0.0.1", "status": "responded"}
+2022-05-23T14:01:36.477Z        debug   main_sequence   handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1", "tag": "main_sequence"}
+2022-05-23T14:01:36.477Z        debug   query_is_ad_domain      handler/plugin_wrapper.go:63    matching query context  {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1", "tag": "query_is_ad_domain", "result": false}
+2022-05-23T14:01:36.478Z        debug   mem_cache       handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1", "tag": "mem_cache"}
+2022-05-23T14:01:36.478Z        debug   mem_cache       cache/cache.go:140      cache hit       {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1"}
+2022-05-23T14:01:36.478Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:36.478Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "m.jingxi.com. IN A 32985 20 127.0.0.1", "status": "responded"}
+2022-05-23T14:01:36.480Z        debug   main_sequence   handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1", "tag": "main_sequence"}
+2022-05-23T14:01:36.480Z        debug   query_is_ad_domain      handler/plugin_wrapper.go:63    matching query context  {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1", "tag": "query_is_ad_domain", "result": false}
+2022-05-23T14:01:36.480Z        debug   mem_cache       handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1", "tag": "mem_cache"}
+2022-05-23T14:01:36.481Z        debug   mem_cache       cache/cache.go:140      cache hit       {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1"}
+2022-05-23T14:01:36.481Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:36.481Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "m.jingxi.com. IN A 7912 21 127.0.0.1", "status": "responded"}
+2022-05-23T14:01:38.748Z        debug   main_sequence   handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1", "tag": "main_sequence"}
+2022-05-23T14:01:38.748Z        debug   query_is_ad_domain      handler/plugin_wrapper.go:63    matching query context  {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1", "tag": "query_is_ad_domain", "result": false}
+2022-05-23T14:01:38.748Z        debug   mem_cache       handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1", "tag": "mem_cache"}
+2022-05-23T14:01:38.749Z        debug   mem_cache       cache/cache.go:140      cache hit       {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1"}
+2022-05-23T14:01:38.749Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:38.749Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "m.jingxi.com. IN A 16669 22 127.0.0.1", "status": "responded"}
+2022-05-23T14:01:38.749Z        debug   main_sequence   handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1", "tag": "main_sequence"}
+2022-05-23T14:01:38.749Z        debug   query_is_ad_domain      handler/plugin_wrapper.go:63    matching query context  {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1", "tag": "query_is_ad_domain", "result": false}
+2022-05-23T14:01:38.750Z        debug   mem_cache       handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1", "tag": "mem_cache"}
+2022-05-23T14:01:38.750Z        debug   mem_cache       cache/cache.go:140      cache hit       {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1"}
+2022-05-23T14:01:38.750Z        debug   modify_ttl      handler/plugin_wrapper.go:80    executing plugin        {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1", "tag": "modify_ttl"}
+2022-05-23T14:01:38.750Z        debug   main_server     dns_handler/server_handler.go:119       entry returned  {"query": "m.jingxi.com. IN A 4303 23 127.0.0.1", "status": "responded"}
